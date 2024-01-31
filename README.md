@@ -1,6 +1,6 @@
-## Mini Twitter
+# Mini Twitter
 
-# A Java-based Mini Twitter with graphical user interface (GUI) using Java Swing. 
+## A Java-based Mini Twitter with graphical user interface (GUI) using Java Swing. 
 
 This is a pure desktop program, without web or mobile components. The goal of this assignment is to let me experience how to apply design
 patterns to build extensible software systems.
