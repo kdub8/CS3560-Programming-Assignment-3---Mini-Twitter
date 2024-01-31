@@ -26,5 +26,8 @@ I then built a GUI for the functions above:
 10. We can post a new Tweet with the TextArea and Button, once you click the Post button. It will add the message to all your followers’ news feed list, as well as your own news feed list.
 11. Whenever a new message is posted, all the followers’ news feed list view should be updated and refreshed automatically.
 
-The patterns included and utilized in this project are Singleton, Observer, Visitor, and Composite.
-This program also contains a Driver class with a main() method to trigger the Admin Control Panel.
+## The patterns included and utilized in this project are Singleton, Observer, Visitor, and Composite. This program also contains a Driver class with a main() method to trigger the Admin Control Panel.
+
+The User class acts as an observer by extending the Subject class and implementing the Observer interface. It is notified of changes (tweets) through the update method, where it updates its view (userView). The attach method is used to add the User object as an observer during its creation.
+
+The NumUsersVisitor class provides a specific operation for counting the number of users in a hierarchy of User and UserGroup objects without modifying the structure of those classes. For a User object, it returns 1, indicating that one user is visited. For a UserGroup object, it returns 0, indicating that a user group is visited but not counted. The Visitor pattern allows for adding new operations (visitors) without changing the visited classes. 
